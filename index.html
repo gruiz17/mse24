@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>MSE 24 - does weight make a difference?</title>
+
+		<meta name="description" content="A presentation for a skateboarding physics class at UC Berkeley. MSE 24.">
+		<meta name="author" content="Gabriel Ruiz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>MSE 24 Experiments:</h2>
+					<h3>Does a rider's weight make a difference?</h3>
+	        <a class="test" href="http://www.talknerdytomelover.com/storage/falling-off-a-skateboard.jpg">
+							<img width="280" height="326" src="http://www.talknerdytomelover.com/storage/falling-off-a-skateboard.jpg" alt="skateboard fail">
+					</a>
+					<p>
+						<small>A presentation by Gabriel Ruiz, Grace Shen, and Timothy Park.</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Introduction</h2>
+						<p>
+							On the fateful and heated summer day of the 11th of April, 2013, a group of college students got together at 10AM for one epic purpose: taking apart skateboards and rebuilding them with ridiculous specifications for the good of science and mankind.
+						</p>
+						</section>
+					<section>
+					 <p>One group of students rose above all the rest to one of the harshest problems plaguing mankind today...</p>
+					</section>
+					<section data-state="alert">
+						<h2>Does a skateboard rider's weight make a difference on the speed or distance traveled?</h2>
+						<small>This is the question pondered in this particular presentation.</small>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Hypothesis!</h2>
+						<p>The overall hypothesis is that <strong>weight doesn't have an effect on a rider's velocity or distance traveled.</strong></p>
+						<small>Not convinced by bold font? Go down.</small>
+
+					</section>
+					<section data-state="soothe">
+						<p>Basically, we have two equations for a change in Kinetic Energy. One based on gravitational potential/acceleration...</p>
+						<img class="fragment" src="http://puu.sh/2Cg67">
+						<p class="fragment">and the other based on the velocity of the rider.</p>
+						<img class="fragment" src="http://puu.sh/2Cg6h">
+						<p class="fragment">Both are based on changes in potential energy.</p>
+					</section>
+					<section data-state="blackout">
+						<p>Putting these two equations together mathematically results in this equation...</p>
+						<img class="fragment" src="http://puu.sh/2CgfO">
+						<p class="fragment">(the adjusted for friction version right here)</p>
+						<img class="fragment" src="http://puu.sh/2CgfV">
+						<p class="fragment">Wait, where did the mass go?</p>
+					</section>
+					<section>
+						<p>Mass in the long run cancels out, leaving only h (distance) as the factor that can change things.</p>
+						<strong>Weight should, therefore, not matter.</strong>
+					</section>
+				</section>
+
+				<section data-state="soothe">
+					<h2>Pretty Code</h2>
+					<pre><code contenteditable>
+x      ||Rider 1, Run 1||Rider 1, Run 2||Rider 2, Run 1||Rider 2, run 2 |
+#######||##############||##############||##############||###############|
+Start  ||10:04         ||7:20          ||9:29          ||8:07           |
+time   ||              ||              ||              ||               |
+#######||##############||##############||##############||###############|
+End    ||11:17         ||8:29          ||12:01         ||9:10           |
+time   ||              ||              ||              ||               |
+#######||##############||##############||##############||###############|
+Distance|20 ft.        ||15 ft.        ||20 ft.        ||10 ft.         |
+#######||##############||##############||##############||###############|
+Markers||4 lines       ||3 lines       ||4 lines       ||2 lines        |
+Crossed||              ||              ||              ||               |
+#######||##############||##############||##############||###############|
+Time   ||1.4333        ||1.3           ||2.06667       ||1.1            |
+Elapsed||seconds       ||seconds       ||seconds       ||seconds        |
+#######||##############||##############||##############||###############|
+Speed  ||13.95 ft/s    ||12.5 ft/s     ||9.68 ft/s     ||9.09 ft/s      |
+#######||##############||##############||##############||###############|
+Avg.   ||13.225 ft/s                   ||9.385 ft/s                     |
+Speed  ||                              ||                               |
+#######||##############||##############||##############||###############|
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Fragmented Views</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<ol>
+							<li class="fragment"><code>any type</code></li>
+							<li class="fragment"><em>of view</em></li>
+							<li class="fragment"><strong>fragments</strong></li>
+						</ol>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's a few styles of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Spectacular image!</h2>
+					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
+						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
+					</a>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Gabriel Ruiz, Grace Shen, and Timothy Park</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: /*Reveal.getQueryHash().theme*/ 'serif', // available themes are in /css/theme
+				transition: /*Reveal.getQueryHash().transition ||*/ 'zoom', // //default/cube/page/concave/zoom/linear/fade/none
+        width: 960,
+        height: 650,
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
